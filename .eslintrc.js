@@ -4,10 +4,15 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: 'module',
     },
-    settings: {
-        react: {
-            version: 'detect',
-        },
+    'settings': {
+        'import/resolver': {
+            'alias': {
+                'map': [
+                    ['@', './src']
+                ],
+                'extensions': ['.ts', '.tsx', '.js', '.jsx', '.json']
+            }
+        }
     },
     plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'import', 'react-hooks'],
     extends: [
@@ -19,13 +24,7 @@ module.exports = {
         'plugin:import/typescript',
         'plugin:jsx-a11y/recommended',
         'plugin:eslint-comments/recommended',
-        'prettier/@typescript-eslint',
-        'plugin:prettier/recommended',
         'prettier',
-        'plugin:prettier/recommended',
-        'prettier/@typescript-eslint',
-
-
     ],
     rules: {
         'no-unused-vars': 'off',
@@ -36,4 +35,4 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
     },
-}
+};

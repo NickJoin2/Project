@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-    entry: path.resolve(__dirname, '..', './src/index.tsx'),
+    entry: path.resolve(__dirname, '..', './src/app/appEntry.tsx'),
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
         alias: {
-            '@components': './src/components',
+            '@': path.resolve(__dirname, '..', './src'),
+            '@components': path.resolve(__dirname, './src/components'),
         }
     },
     module: {
