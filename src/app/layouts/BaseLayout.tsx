@@ -1,15 +1,18 @@
 import React from 'react'
-import {Header} from '@/widgets/header'
-import {Footer} from '@/widgets/footer'
-import {Outlet} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+import {Main} from '@/pages/main'
+import {Layout} from '@/pages/layout'
 
 const App = () => {
     return (
-        <div>
-            <Header/>
-            <Outlet/>
-            <Footer/>
-        </div>
+        <Router>
+            <Routes>
+                <Route path={'/'} element={<Layout/>}>
+                    <Route index element={<Main/>}/>
+                </Route>
+            </Routes>
+        </Router>
     )
 }
 

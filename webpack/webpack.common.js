@@ -23,7 +23,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.scss$/,
+                test: /\.(css|scss)$/,
                 use: [
                     'style-loader', // Добавляет стили в DOM при помощи тега <style>
                     'css-loader', // Интерпретирует @import и url() как import/require()
@@ -31,13 +31,31 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-                type: 'asset/resource',
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images'
+                }
             },
             {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-                type: 'asset/inline',
+                test: /\.svg$/,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'images'  // Можете указать другую папку для сохранения SVG файлов
+                }
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
+            }
         ],
     },
     mode: 'development',

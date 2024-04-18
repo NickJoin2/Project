@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  top: 16px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__block-tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    font-family: 'exo_2Semibold', sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+  }
+
+  &__info-tel {
+    color: #070c11;
+  }
+
+  &__info-work {
+    color: #838688;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
