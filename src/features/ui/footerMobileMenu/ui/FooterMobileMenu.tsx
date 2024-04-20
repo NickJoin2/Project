@@ -22,7 +22,6 @@ const FooterMobileMenu = ({children, NameBlock}: { children: ReactNode; NameBloc
                     {children}
                 </div>
 
-
             </div>
         </div>
 

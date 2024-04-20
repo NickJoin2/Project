@@ -264,8 +264,8 @@ const Footer = () => {
                                 <Link to={''}>
                                     <img src={linkdin} alt="linkdin"/>
                                 </Link>
-
                             </li>
+
                             <li className="footer__item-copyright">
                                 <Link to={''}>Разработка NJoin</Link>
                             </li>
