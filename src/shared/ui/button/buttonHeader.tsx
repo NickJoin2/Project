@@ -18,7 +18,6 @@ const ButtonHeader = ({children}: { children: ReactNode }) => {
       background: #2e6494;
     }
   `
-
     return <StyledButton>{children}</StyledButton>
 }
 

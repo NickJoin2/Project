@@ -1,3 +1,11 @@
+body {
+  font-family: 'exo_2Medium';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #070c11;
+}
+
 @font-face {
   font-family: 'exo_2Semibold';
   src: url('@/shared/fonts/exo2-semibold-webfont.woff2') format('woff2');
@@ -75,9 +83,4 @@ html {
 main {
   flex: 1;
   margin-top: 50px;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
 }

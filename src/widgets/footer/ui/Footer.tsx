@@ -108,7 +108,7 @@ const Footer = () => {
 
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to={''}>Оптом</Link>
+                    <Link to={'wholesale'}>Оптом</Link>
                 </li>
 
                 <li className="footer__item">

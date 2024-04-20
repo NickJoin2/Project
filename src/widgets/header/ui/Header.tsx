@@ -50,7 +50,7 @@ const Header = () => {
                 <div className="user__content">
                   <ul className="user__list">
                     <li className="user__item">
-                      <Link to={''}>Личные данные </Link>
+                        <Link to={'/wholesale'}>Личные данные </Link>
                     </li>
                     <li className="user__item">
                       <Link to={''}>Общие сведения</Link>

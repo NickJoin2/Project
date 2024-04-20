@@ -16,6 +16,7 @@ a,
 a:link,
 a:visited {
   text-decoration: none;
+
 }
 
 a:hover {
@@ -31,10 +32,7 @@ header,
 section,
 main {
   display: block;
-}
-
-body {
-  font-family: 'exo_2Medium', sans-serif;
+  position: relative;
 }
 
 h1,

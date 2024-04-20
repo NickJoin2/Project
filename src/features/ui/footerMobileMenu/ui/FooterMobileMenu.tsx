@@ -2,13 +2,7 @@ import React, {ReactNode, useState} from 'react'
 import '../style/style.scss'
 import FooterMenu from '@/shared/image/mobileMenu/mobileMenu.svg'
 
-const FooterMobileMenu = ({
-                              children,
-                              NameBlock,
-                          }: {
-    children: ReactNode
-    NameBlock: string
-}) => {
+const FooterMobileMenu = ({children, NameBlock,}: { children: ReactNode, NameBlock: string }) => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const toggleBlock = () => {

@@ -1,0 +1,31 @@
+.wholesale {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    padding-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: black;
+      border-radius: 50%;
+      top: 9px;
+      left: -15px;
+    }
+  }
+
+  &__text {
+    max-width: 975px;
+    font-size: 16px;
+    line-height: 130%;
+    padding-bottom: 6px;
+  }
+}
