@@ -12,7 +12,6 @@ import electricCar from '@/shared/image/menu/electricСar.svg'
 import monocycle from '@/shared/image/menu/monocycle.svg'
 import smartToys from '@/shared/image/menu/smartToys.svg'
 import smartWatch from '@/shared/image/menu/smartWatch.svg'
-import sigvei from '@/shared/image/menu/sigvei.svg'
 
 const Navigation: FC = () => {
   return (
@@ -27,36 +26,35 @@ const Navigation: FC = () => {
                 </div>
                 <div className="dropdown-content">
                   <ul className="nav__list-menu">
+
                     <li className="nav-item-menu">
                       <Link to={''}>
                         <img src={gyroscooter} alt="Гироскутеры"/>
                         <span>Гироскутеры</span>
                       </Link>
                     </li>
+
                     <li className="nav-item-menu">
                       <Link to={''}>
                         <img src={electricScoter} alt="Электросамокаты"/>
                         <span>Электросамокаты</span>
                       </Link>
                     </li>
+
                     <li className="nav-item-menu">
                       <Link to={''}>
                         <img src={monocycle} alt="Моноколеса"/>
                         <span>Моноколеса</span>
                       </Link>
                     </li>
-                    <li className="nav-item-menu">
-                      <Link to={''}>
-                        <img src={sigvei} alt="Сигвеи и мини-сигвеи"/>
-                        <span>Сигвеи и мини-сигвеи</span>
-                      </Link>
-                    </li>
+
                     <li className="nav-item-menu">
                       <Link to={''}>
                         <img src={electricMoped} alt="Электроскутеры"/>
                         <span>Электроскутеры</span>
                       </Link>
                     </li>
+
                     <li className="nav-item-menu">
                       <Link to={''}>
                         <img src={electricBike} alt="Электровелосипеды"/>

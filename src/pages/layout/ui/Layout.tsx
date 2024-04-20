@@ -6,12 +6,11 @@ import {Footer} from '@/widgets/footer'
 
 const Layout = () => {
     return (
-        <div className='root-wrapper'>
+        <div className="root-wrapper">
             <Header/>
 
             <main>
-                {/*<Outlet />*/}
-                <span>Соси ушлепки</span>
+                <span>Сосите ушлепки</span>
             </main>
 
             <Footer/>
