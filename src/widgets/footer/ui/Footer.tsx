@@ -118,7 +118,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__copiright">
-            <ul className="footer__list-copiright">
+            <ul className="footer__list-copiright" id={'hidden'}>
               <li className="footer__item-copyright-first">
                 <Link to={''}>SmartТехника © 2024 Все права защищены</Link>
               </li>
@@ -269,6 +269,7 @@ const Footer = () => {
                   <Link to={''}>Разработка NJoin</Link>
                 </li>
               </ul>
+
             </div>
           </div>
         </div>

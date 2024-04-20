@@ -30,9 +30,9 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    top: 10px;
+    top: 15px;
     z-index: 10;
-    padding-top: 30px;
+    padding-top: 25px;
     color: #070c11;
   }
 
@@ -53,6 +53,7 @@
       background: #243c53;
       padding-top: 21px;
       padding-bottom: 21px;
+      cursor: pointer;
     }
 
     & img {
