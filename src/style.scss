@@ -33,6 +33,10 @@ main {
   display: block;
 }
 
+body {
+  font-family: 'exo_2Medium', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -108,13 +112,6 @@ legend {
   display: block;
 }
 
-.container {
-  max-width: 1300px;
-  padding: 0 15px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: 'exo_2Semibold';
   src: url('@/shared/fonts/exo2-semibold-webfont.woff2') format('woff2');
@@ -163,3 +160,12 @@ legend {
   font-weight: normal;
   font-style: normal;
 }
+
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+

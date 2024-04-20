@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin');
+const {HotModuleReplacementPlugin} = require('webpack')
 
 module.exports = {
     entry: path.resolve(__dirname, '..', './src/app/appEntry.tsx'),
@@ -71,6 +72,7 @@ module.exports = {
         new ESLintPlugin({
             extensions: ['js', 'jsx', 'ts', 'tsx'],
         }),
+        new HotModuleReplacementPlugin(),
     ],
     optimization: {
         minimize: true,
@@ -84,6 +86,10 @@ module.exports = {
                 }
             }
         }
+    },
+    devServer: {
+        compress: true,
+        hot: true,
     },
     stats: 'errors-only',
 }
