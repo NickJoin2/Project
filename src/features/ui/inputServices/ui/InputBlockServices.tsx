@@ -1,13 +1,17 @@
-import React, {FC} from 'react';
-import styled from "styled-components";
+import React, {FC} from 'react'
+import styled from 'styled-components'
 
 interface InputBlockServicesProps {
-    children: React.ReactNode;
-    grid?: string;
-    gap?: string;
+    children: React.ReactNode
+    grid?: string
+    gap?: string
 }
 
-const InputBlockServices: FC<InputBlockServicesProps> = ({children, grid = 'grid', gap = '5px'}) => {
+const InputBlockServices: FC<InputBlockServicesProps> = ({
+                                                             children,
+                                                             grid = 'grid',
+                                                             gap = '5px',
+                                                         }) => {
     const StyledInputBlockServices = styled.div`
         display: ${grid};
         align-items: start;
@@ -18,11 +22,9 @@ const InputBlockServices: FC<InputBlockServicesProps> = ({children, grid = 'grid
         @media screen and (max-width: 820px) {
             width: 300px;
         }
-    `;
+    `
 
-    return (
-        <StyledInputBlockServices>{children}</StyledInputBlockServices>
-    );
-};
+    return <StyledInputBlockServices>{children}</StyledInputBlockServices>
+}
 
-export default InputBlockServices;
+export default InputBlockServices

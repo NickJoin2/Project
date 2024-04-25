@@ -3,7 +3,7 @@ import {Header} from '@/widgets/header'
 // import { Outlet } from 'react-router-dom'
 import '@/app/style.scss'
 import {Footer} from '@/widgets/footer'
-import {Outlet} from "react-router-dom";
+import {Outlet} from 'react-router-dom'
 
 const Layout = () => {
     return (

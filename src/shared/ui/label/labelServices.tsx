@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-const LabelServices = ({id, text}: { id: string, text: string }) => {
+const LabelServices = ({id, text}: { id: string; text: string }) => {
     const Label = styled.label`
         font-family: 'exo_2Regular', sans-serif;
         font-weight: 400;
@@ -14,9 +14,7 @@ const LabelServices = ({id, text}: { id: string, text: string }) => {
             min-width: 260px;
         }
     `
-    return (
-        <Label htmlFor={id}>{text}</Label>
-    );
-};
+    return <Label htmlFor={id}>{text}</Label>
+}
 
-export default LabelServices;
+export default LabelServices

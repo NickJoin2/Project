@@ -1,3 +1,3 @@
-import FormWholesale from "./ui/FormWholesale";
+import FormWholesale from './ui/FormWholesale'
 
 export {FormWholesale}

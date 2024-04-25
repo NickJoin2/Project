@@ -1,11 +1,8 @@
-import React from 'react';
-import {WholesaleWidget} from "@/widgets/wholesale";
-
+import React from 'react'
+import {WholesaleWidget} from '@/widgets/wholesale'
 
 const Wholesale = () => {
-    return (
-            <WholesaleWidget/>
-    );
-};
+    return <WholesaleWidget/>
+}
 
-export default Wholesale;
+export default Wholesale

@@ -26,11 +26,11 @@
     align-items: start;
     flex-direction: column;
     gap: 7px;
-    width: 225px;
+    width: 280px;
 
     & li a:hover {
-        text-decoration: underline;
-      }
+      text-decoration: underline;
+    }
   }
 
   &__title {

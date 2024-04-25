@@ -108,7 +108,7 @@ const Footer = () => {
 
               <ul className="footer__list">
                 <li className="footer__item">
-                    <Link to={'wholesale'}>Оптом</Link>
+                  <Link to={'wholesale'}>Оптом</Link>
                 </li>
 
                 <li className="footer__item">
@@ -178,6 +178,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </FooterMobileMenu>
+
               <FooterMobileMenu NameBlock="О магазине">
                 <ul className="footer__list">
                   <li className="footer__item">
@@ -216,31 +217,32 @@ const Footer = () => {
                   </li>
                 </ul>
               </FooterMobileMenu>
-              <FooterMobileMenu NameBlock="Наши контакты">
-                <ul className="footer__list">
-                  <li className="footer__item-info">
-                    <a href="tel:+7 (958) 111-95-03">+7 (958) 111-95-03</a>
-                  </li>
-                  <li className="footer__item-info">
-                    <a href="tel:+7 (812) 660-50-54">+7 (812) 660-50-54</a>
-                  </li>
-                  <li className="footer__item-work">Пн-вс: с 10:00 до 21:00</li>
-                </ul>
+              {/*<FooterMobileMenu NameBlock="Наши контакты">*/}
+              {/*  <ul className="footer__list">*/}
+              {/*    <li className="footer__item-info">*/}
+              {/*      <a href="tel:+7 (958) 111-95-03">+7 (958) 111-95-03</a>*/}
+              {/*    </li>*/}
+              {/*    <li className="footer__item-info">*/}
+              {/*      <a href="tel:+7 (812) 660-50-54">+7 (812) 660-50-54</a>*/}
+              {/*    </li>*/}
+              {/*    <li className="footer__item-work">Пн-вс: с 10:00 до 21:00</li>*/}
+              {/*  </ul>*/}
 
-                <ul className="footer__list">
-                  <li className="footer__item">
-                    <Link to={''}>Проспект Стачек 67 к.5</Link>
-                  </li>
+              {/*  <ul className="footer__list">*/}
+              {/*    <li className="footer__item">*/}
+              {/*      <Link to={''}>Проспект Стачек 67 к.5</Link>*/}
+              {/*    </li>*/}
 
-                  <li className="footer__item">
-                    <Link to={''}>Лиговский проспект 205</Link>
-                  </li>
+              {/*    <li className="footer__item">*/}
+              {/*      <Link to={''}>Лиговский проспект 205</Link>*/}
+              {/*    </li>*/}
 
-                  <li className="footer__item">
-                    <Link to={''}>Гражданский проспект, 116 к.5</Link>
-                  </li>
-                </ul>
-              </FooterMobileMenu>
+              {/*    <li className="footer__item">*/}
+              {/*      <Link to={''}>Гражданский проспект, 116 к.5</Link>*/}
+              {/*    </li>*/}
+              {/*  </ul>*/}
+              {/*</FooterMobileMenu>*/}
+
 
               <ul className="footer__list-copiright">
                 <li className="footer__item-copyright-first">
@@ -269,7 +271,6 @@ const Footer = () => {
                   <Link to={''}>Разработка NJoin</Link>
                 </li>
               </ul>
-
             </div>
           </div>
         </div>

@@ -1,3 +1,3 @@
-import InputBlockServices from "./ui/InputBlockServices";
+import InputBlockServices from './ui/InputBlockServices'
 
 export {InputBlockServices}

@@ -1,3 +1,3 @@
-import WholesaleWidget from "./ui/Wholesale";
+import WholesaleWidget from './ui/Wholesale'
 
 export {WholesaleWidget}

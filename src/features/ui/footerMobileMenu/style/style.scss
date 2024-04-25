@@ -10,7 +10,22 @@
 }
 
 .mobile-menu .footer__item a {
+  display: inline;
+  position: relative;
   color: #838688;
+  margin-left: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background: #525151;
+    top: 8px;
+    left: -22px;
+  }
 }
 
 .content .footer__list {
@@ -40,15 +55,16 @@
 .expandable-block .content {
   display: block;
   overflow: hidden;
-  height: 0;
-  transition: height 0.5s ease;
+  height: 0px;
+  transition: all 1s ease; /* Adjust the transition duration for smoother animation */
+  padding-left: 15px;
 }
 
 .expandable-block.open .content {
-  height: auto;
-  transition: height 0.5s ease;
+  height: 300px;
   padding-top: 7px;
   max-width: 416px;
-  padding-left: 15px;
+
   padding-bottom: 10px;
+  transition: all 1s ease; /* Adjust the transition duration for smoother animation */
 }

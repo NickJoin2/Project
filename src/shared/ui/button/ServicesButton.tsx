@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const ServicesButton = ({children}: { children: string }) => {
     const StyleButton = styled.button`
@@ -13,7 +13,7 @@ const ServicesButton = ({children}: { children: string }) => {
         color: #fff;
         cursor: pointer;
         width: 310px;
-        transition: background-color .4s ease;
+        transition: background-color 0.4s ease;
         margin-top: 8px;
 
         &:hover {
@@ -23,10 +23,8 @@ const ServicesButton = ({children}: { children: string }) => {
         @media screen and (max-width: 820px) {
             width: 291px;
         }
-    `;
-    return (
-        <StyleButton>{children}</StyleButton>
-    );
-};
+    `
+    return <StyleButton>{children}</StyleButton>
+}
 
-export default ServicesButton;
+export default ServicesButton
