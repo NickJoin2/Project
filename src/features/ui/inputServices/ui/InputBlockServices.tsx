@@ -7,13 +7,14 @@ interface InputBlockServicesProps {
     gap?: string;
 }
 
-const InputBlockServices: FC<InputBlockServicesProps> = ({children, grid = 'grid', gap = '0px'}) => {
+const InputBlockServices: FC<InputBlockServicesProps> = ({children, grid = 'grid', gap = '5px'}) => {
     const StyledInputBlockServices = styled.div`
         display: ${grid};
         align-items: start;
         justify-content: start;
         gap: ${gap};
-        width: 340px;
+        width: 380px;
+        flex-wrap: wrap;
         @media screen and (max-width: 820px) {
             width: 300px;
         }

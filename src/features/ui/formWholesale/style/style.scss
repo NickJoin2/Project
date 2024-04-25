@@ -2,7 +2,7 @@
   &__title {
     padding: 35px 0 30px 0;
     font-weight: 700;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 1.226rem + 1.29vw, 2.25rem);
     line-height: 130%;
   }
 
@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: start;
   }
 
   &__form {
@@ -20,6 +21,41 @@
   &__block {
     display: grid;
     gap: 15px;
+  }
+
+  .input {
+    border: 1px solid #eaeaf0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 340px;
+    height: 48px;
+    font-family: 'exo_2Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #838688;
+  }
+
+  .textArea {
+    font-family: 'exo_2Regular', sans-serif;
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+    color: #838688;
+    height: 105px;
+    border: 1px solid #eaeaf0;
+    font-weight: 400;
+    line-height: 100%;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .checkbox {
+    width: 17px;
+    height: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
 
@@ -37,6 +73,14 @@
     &__form {
       padding-top: 15px;
       margin: 0 auto;
+    }
+
+    .input {
+      width: 300px;
+    }
+
+    .textArea {
+      width: 300px;
     }
   }
 }

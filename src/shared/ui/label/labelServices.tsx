@@ -8,11 +8,10 @@ const LabelServices = ({id, text}: { id: string, text: string }) => {
         font-size: 16px;
         height: auto;
         color: #070c11;
-        max-width: 350px;
-        //width: 340px;
-        width: 100%;
+        min-width: 260px;
+
         @media screen and (max-width: 820px) {
-            max-width: 350px;
+            min-width: 260px;
         }
     `
     return (

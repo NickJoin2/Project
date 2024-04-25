@@ -1,0 +1,10 @@
+.errorMessage {
+  font-family: 'exo_2Medium', sans-serif;
+  color: red;
+  font-size: 14px;
+  padding-left: 7px;
+
+  & img {
+    padding-right: 8px;
+  }
+}
